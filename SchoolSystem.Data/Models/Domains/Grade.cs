@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace School_System.Data.Models.Domains
 {
-    public class Teacher : Staff
+    public class Grade
     {
-        public int ClassNumber { get; set; }
+        [Key]
+        public string GradeID { get; set; }
         public ICollection<Subject> Subjects { get; set; }
     }
 }

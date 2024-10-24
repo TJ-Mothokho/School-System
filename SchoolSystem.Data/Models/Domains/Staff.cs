@@ -12,5 +12,11 @@ namespace School_System.Data.Models.Domains
         public DateOnly DateEnded { get; set; }
         public string Position { get; set; }
         public decimal Salary { get; set; }
+        public TypeOfStuff Type { get; set; }
+    }
+    public enum TypeOfStuff
+    {
+        Teacher,
+        Admin
     }
 }

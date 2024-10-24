@@ -17,6 +17,13 @@ namespace School_System.Data.Models.Domains
     }
     public enum Role
     {
-        
+        Student,
+        Teacher,
+        Admin
+    }
+    public enum  Gender
+    {
+        Male,
+        Female
     }
 }
