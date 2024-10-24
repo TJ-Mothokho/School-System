@@ -14,6 +14,7 @@ namespace School_System.Data.Models.Domains
 
         [ForeignKey("Teacher")]
         public int? TeacherID { get; set; }
+
         [ForeignKey("Grade")]
         public string GradeID { get; set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School_System.Data.Models.Domains
 {
-    public class Admin
+    public class Admin : Staff
     {
     }
 }
