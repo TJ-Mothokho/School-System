@@ -14,6 +14,12 @@ namespace School_System.Data.Context
             modelBuilder.Entity<Student>().ToTable("Students");
             modelBuilder.Entity<Teacher>().ToTable("Teachers");
             modelBuilder.Entity<Admin>().ToTable("Admins");
+
+            modelBuilder.Entity<Staff>(entity =>
+            {
+                entity.Property(e => e.Salary)
+                    .HasColumnType("decimal(18,2)");
+            });
         }
 
         public DbSet<User> User { get; set; }

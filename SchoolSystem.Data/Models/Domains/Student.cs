@@ -9,8 +9,11 @@ namespace School_System.Data.Models.Domains
 {
     public class Student : User
     {
-        [ForeignKey("Class")]
-        public int ClassID { get; set; }
+        [ForeignKey("Grade")]
+        public string GradeID { get; set; }
         public ICollection<Record> Records { get; set; }
+
+        // Navigation properties
+        public Grade Grade { get; set; }
     }
 }

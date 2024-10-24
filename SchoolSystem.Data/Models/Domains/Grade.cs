@@ -12,5 +12,6 @@ namespace School_System.Data.Models.Domains
         [Key]
         public string GradeID { get; set; }
         public ICollection<Subject> Subjects { get; set; }
+        public ICollection<Student> Students { get; set; }
     }
 }
