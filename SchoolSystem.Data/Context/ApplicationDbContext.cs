@@ -27,5 +27,6 @@ namespace School_System.Data.Context
         public DbSet<Subject> Subject { get; set; }
         public DbSet<Staff> Staff { get; set; }
         public DbSet<Record> Record { get; set; }
+
     }
 }
